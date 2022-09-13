@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.6), cyan), url(images/admin.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;
+             height: 800px;
+}
+
+/* Index Styling */
+
+.portal-title{
+    margin-top: 150px;
+}
+
+.portal-title h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+
+}
+
+.login-link{
+    width: 300px;
+ }
+
+ /* Index Styling End */
+
+ /*Student login */
+
+ .student-portal-title{
+    margin-top: 150px;
+ }
+
+#login-form{
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.6), cyan), url(images/admin.jpg);
+    width: 500px;
+    padding: 16px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+     box-shadow: 1px 1px 1px 1px cyan;
+}
+
+.login-label{
+    font-size: 20px;
+}
+
+
+.forgot-pwd{
+    padding: 10px;
+    
+}
+
+.forgot-pwd a{
+    color: black;
+}
+
+/*Student login end */
