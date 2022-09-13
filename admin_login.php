@@ -1,4 +1,14 @@
-<?php ?>
+<?php
+   $error = "";
+   $error2 = "";
+  
+
+   if(isset($_GET["error"])) {
+      $error = "Please log in with correct credentials";
+   } elseif(isset($_GET["error1"])) {
+     $error = "Attempted SQL injection has been detected, doing this again will get you in trouble";
+   }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +48,10 @@
                 <button class="btn btn-dark" name="admin_login" role="button">Log in</button>
                  
                 <a href="index.html" class="btn btn-dark" style="margin-left: 100px;">Back</a>
-              </div>             
+              </div>
+              <?php if(isset($_GET['error']) || isset($_GET['error1'])) {
+          echo '<div class="alert alert-danger text-center mt-1 mb-3">'.$error.'</div>';
+         }  ?>             
             </form>
             <div class="forgot-pwd">
                 <a href="" ><b>Forgot password?</b></a>
