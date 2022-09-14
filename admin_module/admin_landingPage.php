@@ -46,8 +46,8 @@
   <div class="container-fluid">
       <div class="row justify-content-between">
          <div class="col-sm-6">
-         <h2>Sidenav Push Example</h2>
-  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+         <h2>Welcome to your Admin Dashboard</h2>
+  <p.</p>
          </div>
          <div class="col-sm-6 text-end">
           Log out
