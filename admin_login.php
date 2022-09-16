@@ -6,7 +6,7 @@
    if(isset($_GET["error"])) {
       $error = "Please log in with correct credentials";
    } elseif(isset($_GET["error1"])) {
-     $error = "Attempted SQL injection has been detected, doing this again will get you in trouble";
+     $error = "Malicious input has been detected, doing this again will get you in trouble";
    }
 ?>
 <!DOCTYPE html>
