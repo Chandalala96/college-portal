@@ -86,7 +86,7 @@
                <ul>
                   <li><a href="admin_landingPage.php" class="active"><i class="fas fa-home"></i> Home</a></li>
                   <li><a class="dropdown-toggle" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fas fa-user"></i> Manage Users
+                  <i class="fas fa-user"></i> Manage Userss
                         </a>
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item text-black" href="manage_students.php">Manage Students</a></li>
