@@ -1,25 +1,23 @@
 <?php
 
-//update.php
+//insert.php
 
 $connect = new PDO('mysql:host=localhost;dbname=college_portal', 'root', '');
 
-if(isset($_POST["id"]))
+if(isset($_POST["title"]))
 {
- $query = "
- UPDATE events 
- SET title=:title, start_event=:start_event, end_event=:end_event 
- WHERE id=:id
- ";
+ $query = "INSERT INTO events (title, start_event, end_event) VALUES (:title, :start_event, :end_event)";
+
  $statement = $connect->prepare($query);
+
  $statement->execute(
   array(
    ':title'  => $_POST['title'],
    ':start_event' => $_POST['start'],
-   ':end_event' => $_POST['end'],
-   ':id'   => $_POST['id']
+   ':end_event' => $_POST['end']
   )
  );
 }
 
-?>
+
+

@@ -98,6 +98,10 @@ a{
 	justify-content: space-between;
 }
 /*header*/
+
+#mobile-heading{
+  display: none;
+}
 .header{
 	background-color: #111;
 	padding: 12px 0;
@@ -191,7 +195,7 @@ a{
 }
 
 #student-card {
-  background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );;
+  background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
   box-shadow: 3px 3px 3px 3px silver;
 }
 
@@ -228,6 +232,12 @@ a{
   
   .header{
     display: block;
+  }
+
+  #mobile-heading{
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
   }
 
   .sidenav{
@@ -289,6 +299,65 @@ a{
 
   .events-card{
     margin-top: 12px;
+  }
+}
+
+/* managestudents.php */
+
+
+.dept-card{
+  width: 50%;
+}
+
+.dept-btn1{
+  background: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+  font-size: 20px;
+}
+
+.dept-btn2{
+  background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  font-size: 20px;
+}
+
+.dept-btn3{
+  background: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+  font-size: 20px;
+}
+
+.dept-btn4{
+  background: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+  font-size: 20px;
+}
+
+@media(max-width:991px){
+  .dept-section{
+    margin-top: 60px;
+  }
+   .dept-section h2{
+       font-size: 20px;
+   }
+  .dept-card{
+    width: 100%;
+  }
+
+  .dept-btn1{
+    
+    font-size: 15px;
+  }
+  
+  .dept-btn2{
+
+    font-size: 15px;
+  }
+  
+  .dept-btn3{
+   
+    font-size: 15px;
+  }
+  
+  .dept-btn4{
+
+    font-size: 15px;
   }
 }
 
